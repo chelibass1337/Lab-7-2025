@@ -1,6 +1,6 @@
 package functions;
 
-public interface TabulatedFunction extends Iterable<FunctionPoint> {
+public interface TabulatedFunction extends Iterable<FunctionPoint>, Function, Cloneable {
     double getLeftDomainBorder();
     double getRightDomainBorder();
     double getFunctionValue(double x);
